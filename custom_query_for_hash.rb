@@ -26,7 +26,7 @@ def hashQ(hash_save,search)
 		
 		result = true
 
-		search.each {|hh| hh.each {|k,v| result = false if h[k] !=v}}
+		search.each {|hh| hh.each {|k,v| result = false if h[k] !=v}} # AND
 		result_list.push(h) if result != false
 		#result_list << h if result != false
 
