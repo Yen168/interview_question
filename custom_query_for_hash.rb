@@ -21,7 +21,8 @@ search2 = [year: "1999", :model=>"T210"]
 def hashQ(hash_save,search)
 	
 	result_list = []
-	hash_save.find_all do |h|
+	#hash_save.find_all do |h|
+	hash_save.each do |h|
 		
 		result = true
 
